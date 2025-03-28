@@ -10,8 +10,8 @@
 :root {
   --primary-color: #4070f4;
   --primary-color-dark: #20e2d7;
-  --secondary-color: #ffffff;;
-  --secondary-color-light: #ffffffe0;;
+  --secondary-color: #ffffff;
+  --secondary-color-light: #ffffffe0;
   --secondary-color-dark: #4070f4;
   --text-light: #94a3b8;
   --white: #ffffff;
@@ -41,13 +41,13 @@
 }
 
 /* Scroll TO Top Button CSS */
-.scroll-button a{
+.scroll-button a {
   position: fixed;
   bottom: 20px;
   right: 20px;
   color: #fff;
   background: #4070f4;
-  padding: 7px 12px;;
+  padding: 7px 12px;
   font-size: 18px;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.15);
@@ -186,7 +186,7 @@ nav.sticky .menu-btn {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Premium Hero Section Styling */
@@ -268,8 +268,6 @@ nav.sticky .menu-btn {
   opacity: 1;
 }
 
-
-
 /* This css for products */
 
 /* General section styling */
@@ -342,15 +340,14 @@ h2 {
   margin-bottom: 15px; /* Balanced spacing below image */
   border-radius: 8px; /* Consistent border-radius */
   transition: transform 0.3s ease;
-  
 }
 
 .product-card1:hover img {
   transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
-.product-card a{
-   text-decoration:none; /*product card anker tag  */
+.product-card a {
+  text-decoration: none; /*product card anker tag  */
 }
 
 .product-card1 p {
@@ -367,28 +364,25 @@ h2 {
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media (max-width: 778px) {
   .products-section {
-      flex-direction: column;
+    flex-direction: column;
+    padding: 0%;
   }
 
   .product-category {
-      width: 100%;
-      margin-bottom: 20px;
-      margin-right: 0; /* Remove right margin in single-column layout */
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0; /* Remove right margin in single-column layout */
   }
 
   .product-grid {
-      grid-template-columns: 1fr; /* One product per row on smaller screens */
-      gap: 15px; /* Adjust gap for smaller screens */
+    grid-template-columns: repeat(2, 1fr); /* Two products per row */
+    gap: 10px; /* Adjust gap for smaller screens */
   }
 }
 
-
-
 /* This is footer css */
-
-
 
 /* Section Container */
 .section__container2 {
@@ -420,7 +414,7 @@ h2 {
 }
 
 /* footr my name css */
-.footer__col h5 a{
+.footer__col h5 a {
   color: rgba(2, 2, 225, 0.884);
 }
 
@@ -431,7 +425,7 @@ h2 {
 }
 
 /* links h4 css */
-.footer__col h4{
+.footer__col h4 {
   padding-bottom: 1rem;
   color: #a1bbdc;
 }
@@ -509,7 +503,22 @@ h2 {
 }
 
 /* Mobile Devices */
+
+/* text size of product Grid container  */
+
 @media screen and (max-width: 480px) {
+  .product-grid p {
+    font-size: 16px;
+  }
+
+  /* product grid image size */
+
+  .product-grid img {
+    max-width: 70px; /* Smaller image size */
+  }
+
+  /* this is for footer */
+
   .footer__col h5 {
     font-size: 1.2rem;
   }
